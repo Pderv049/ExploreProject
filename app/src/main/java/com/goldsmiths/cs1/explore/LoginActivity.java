@@ -12,7 +12,7 @@ import android.widget.Toast;
 public class LoginActivity extends ActionBarActivity implements View.OnClickListener {
 
     Button signIn;
-    Button register;
+    Button signUp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,8 +26,8 @@ public class LoginActivity extends ActionBarActivity implements View.OnClickList
         signIn = (Button) findViewById( R.id.sign_in_button );
         signIn.setOnClickListener( this );
 
-        register = (Button) findViewById(R.id.register_button);
-        register.setOnClickListener(this);
+        signUp = (Button) findViewById(R.id.signUp_button);
+        signUp.setOnClickListener(this);
 
 
 
@@ -62,11 +62,11 @@ public class LoginActivity extends ActionBarActivity implements View.OnClickList
         int id = v.getId();
 
         if (id == R.id.sign_in_button) {
-            Toast.makeText(LoginActivity.this, "YOU PRESSED ME", Toast.LENGTH_SHORT).show();
+            Toast.makeText(LoginActivity.this, "Bongo-bongo", Toast.LENGTH_SHORT).show();
         }
 
-        if (id == R.id.register_button) {
-            Toast.makeText(LoginActivity.this, "Fuck you assface", Toast.LENGTH_SHORT).show();
+        if (id == R.id.signUp_button) {
+            Toast.makeText(LoginActivity.this, "Land", Toast.LENGTH_SHORT).show();
         }
     }
 
