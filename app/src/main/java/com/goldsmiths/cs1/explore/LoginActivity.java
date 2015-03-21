@@ -4,15 +4,30 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.Toast;
 
 
-public class LoginActivity extends ActionBarActivity {
+public class LoginActivity extends ActionBarActivity implements View.OnClickListener {
+
+    Button signIn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
+        findViews();
     }
+    private void findViews(){
+
+        signIn = (Button) findViewById( R.id.sign_in_button );
+
+        signIn.setOnClickListener( this );
+
+    }
+
 
 
     @Override
@@ -35,5 +50,14 @@ public class LoginActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onClick(View v) {
+        int id = v.getId();
+
+        if ( id == R.id.sign_in_button){
+            Toast.makeText(LoginActivity.this, "YOU PRESSED ME", Toast.LENGTH_SHORT ).show();
+        }
     }
 }
