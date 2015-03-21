@@ -14,7 +14,7 @@ public class LoginActivity extends ActionBarActivity implements View.OnClickList
     Button signIn;
     Button register;
     Button MoMo;
-
+    Button Elhaj;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,6 +32,9 @@ public class LoginActivity extends ActionBarActivity implements View.OnClickList
 
         MoMo = (Button) findViewById(R.id.momo);
         MoMo.setOnClickListener(this);
+
+        Elhaj = (Button) findViewById(R.id.Elhaj);
+        Elhaj.setOnClickListener(this);
 
     }
 
@@ -73,6 +76,10 @@ public class LoginActivity extends ActionBarActivity implements View.OnClickList
 
         if (id == R.id.momo) {
             Toast.makeText(LoginActivity.this, "Where is the loginactivity?", Toast.LENGTH_LONG).show();
+        }
+
+        if (id == R.id.Elhaj) {
+            Toast.makeText(LoginActivity.this, "Should I compare thee to a shitty day?", Toast.LENGTH_LONG).show();
         }
     }
 }
