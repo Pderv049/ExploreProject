@@ -13,21 +13,33 @@
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="mo&apos;s button "
+        android:text="Log-In"
         android:id="@+id/sign_in_button"
-        android:background="#0D24B8"
+        android:background="#190566"
         android:textColor="#FFFFFF"
         android:layout_marginBottom="15dp"
         android:layout_above="@+id/register_button"
-        android:layout_alignStart="@+id/register_button" />
+        android:layout_alignStart="@+id/register_button"
+        android:layout_alignEnd="@+id/register_button" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:id="@+id/register_button"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="57dp"
+        android:background="#190566"
+        android:textColor="#FFFFFF" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="New Button"
-        android:id="@+id/register_button"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="57dp" />
+        android:id="@+id/momo"
+        android:layout_below="@+id/textView"
+        android:layout_alignEnd="@+id/sign_in_button"
+        android:layout_marginTop="59dp" />
 
 </RelativeLayout>
